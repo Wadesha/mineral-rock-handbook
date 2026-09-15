@@ -2,68 +2,70 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>矿物与岩石实物手册</title>
-<meta name="description" content="能摸到的矿物与岩石：实物描述、可到访地点、来历变化与背后的原理。">
+<meta name="description" content="能走到跟前去看的矿物与岩石，一处一页。">
 <style>
 *{box-sizing:border-box}
 :root{
-  --bg:#fbfaf7;--panel:#f4f1ea;--ink:#23201c;--muted:#6d6659;--line:#e2dcd0;--rule:#cfc7b8;
-  --accent:#2f5d8c;--soft:#e8eff5;--warm:#8c4a2f;--warmsoft:#f6ece6;
+  --bg:#fbfaf7;--ink:#23201c;--muted:#6d6659;--line:#e2dcd0;--rule:#cfc7b8;
+  --accent:#2f5d8c;--warm:#8c4a2f;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#16171a;--panel:#1e2024;--ink:#e6e3dc;--muted:#9d968b;--line:#2b2f34;--rule:#3a3f45;
-        --accent:#8ab4dc;--soft:#22303c;--warm:#d09a7c;--warmsoft:#2e2621}
+  :root{--bg:#16171a;--ink:#e6e3dc;--muted:#9d968b;--line:#2b2f34;--rule:#3a3f45;
+        --accent:#8ab4dc;--warm:#d09a7c}
 }
 body{margin:0;background:var(--bg);color:var(--ink);
   font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,"SimSun",serif;
-  font-size:16px;line-height:1.95;-webkit-font-smoothing:antialiased}
+  font-size:15.5px;line-height:1.85;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
 a:hover{color:var(--accent);border-color:var(--accent)}
-nav{border-bottom:1px solid var(--line);padding:8px 0 9px;background:var(--bg)}
-nav .in{max-width:1000px;margin:0 auto;padding:0 18px;display:flex;flex-wrap:wrap;gap:14px;align-items:baseline}
+nav{border-bottom:1px solid var(--line);padding:7px 0 8px;background:var(--bg)}
+nav .in{max-width:960px;margin:0 auto;padding:0 16px;display:flex;flex-wrap:wrap;gap:14px;align-items:baseline}
 nav .brand{font-weight:700;border:0;letter-spacing:.02em}
 nav a.on{color:var(--accent);border-color:var(--accent)}
 nav .sp{flex:1}
-nav .en{font-size:12px;color:var(--muted);font-family:Georgia,"Times New Roman",serif;font-style:italic}
-main{max-width:820px;margin:0 auto;padding:22px 18px 60px}
-h1{font-size:24px;line-height:1.4;margin:.2em 0 .35em;letter-spacing:.01em}
-h2{font-size:17.5px;line-height:1.5;margin:1.5em 0 .4em;padding-bottom:.22em;border-bottom:1px solid var(--line)}
-h3{font-size:16.5px;line-height:1.5;margin:1.35em 0 .3em}
-p{margin:0 0 .62em;text-indent:2em;text-align:justify}
+nav .en{font-size:11.5px;color:var(--muted);font-family:Georgia,"Times New Roman",serif;font-style:italic}
+main{max-width:740px;margin:0 auto;padding:18px 16px 54px}
+h1{font-size:22px;line-height:1.4;margin:.15em 0 .4em;letter-spacing:.01em}
+h2{font-size:16px;line-height:1.5;margin:1.35em 0 .38em;padding-bottom:.2em;border-bottom:1px solid var(--line)}
+p{margin:0 0 .55em;text-indent:2em;text-align:justify}
 p.flat{text-indent:0}
-p.kicker{text-indent:0;font-size:13.5px;color:var(--muted);margin-bottom:.15em}
-p.lead{text-indent:0;color:var(--muted);line-height:1.8}
-p.ref{text-indent:0;font-size:13.5px;color:var(--muted);line-height:1.7;word-break:break-word}
+p.ore{text-indent:0;margin-bottom:.6em}
+p.ref{text-indent:0;font-size:13px;color:var(--muted);line-height:1.7;word-break:break-word}
 p.ref a{border-bottom-style:dotted}
-p.go{text-indent:0;font-size:14.5px;background:var(--panel);border-left:3px solid var(--rule);
-  padding:8px 12px;line-height:1.8}
 span.en{font-size:.72em;color:var(--muted);font-family:Georgia,"Times New Roman",serif;font-weight:400;
-  margin-left:.5em;margin-right:.45em;letter-spacing:.01em}
-b{font-weight:700}
-.hl{color:var(--accent);font-weight:700}
-.hw{color:var(--warm);font-weight:700}
-footer{border-top:1px solid var(--line);margin-top:34px;padding:14px 0 30px;color:var(--muted);font-size:13px}
-footer .in{max-width:820px;margin:0 auto;padding:0 18px}
-footer p{text-indent:0;line-height:1.8}
-.hlist p{margin-bottom:.75em}
+  margin-left:.5em;margin-right:.4em;letter-spacing:.01em}
+b.ore{color:var(--accent)}
+footer{border-top:1px solid var(--line);margin-top:28px;padding:12px 0 26px;color:var(--muted);font-size:12.5px}
+footer .in{max-width:740px;margin:0 auto;padding:0 16px}
+footer p{text-indent:0;line-height:1.75}
 </style></head><body>
-<nav><div class="in"><a class="brand" href="">矿物与岩石实物手册</a><span class="sp"></span><a href="" class="on">总览</a><a href="kuangwu/">矿物实物</a><a href="yanshi/">岩石实物</a><a href="yuanli/">原理</a><a href="duibi/">易混对照</a><a href="laili/">来历与变化</a></div><div class="in"><span class="en">A field guide to minerals and rocks you can actually handle</span></div></nav>
+<nav><div class="in"><a class="brand" href="">矿物与岩石实物手册</a><span class="sp"></span><a href="" class="on">地点</a><a href="kuangzhong/">按矿种找地点</a></div><div class="in"><span class="en">Where to go, and what you can actually see there</span></div></nav>
 <main>
-<h1>矿物与岩石实物手册 <span class="en">A field guide to minerals and rocks you can actually handle</span></h1>
-<p class="lead">这里写的都是能亲手摸到的东西：一块透明得像冰的六棱柱，一枚能在铁上擦出火花的蓝黑小石头，一面条带弯曲的古老岩石，一块红绿相间的深部岩石。每一页都从手里这块东西的样子讲起——颜色、光泽、软硬、裂开的方式、颗粒粗细，然后讲它在什么地方能看到，再讲它的来历与这些年的变化，最后回到它为什么长成这样。</p>
-<h2>这份手册的读法</h2>
-<p>顺序是刻意的：先看见，再追溯，最后解释。手里先有一块具体的石头，后面的原理才有落脚的地方；反过来先背原理，到了现场往往认不出任何东西。所以每一页的开头都不谈成因，只谈你拿起它时能感到、能看到的一切，包括那些容易被忽略的细节，比如解理面的平整程度、气孔被充填的样子、颗粒之间是紧密镶嵌还是松散堆积。</p>
-<p>手册分两部分。矿物实物 12 处，都是能到现场、能上手比较的地点，从东海的水晶到宣化的赤铁矿；岩石实物 7 处，从五大连池刚喷出不久的玄武岩到曾进入地下深处又被抬回地表的榴辉岩。两部分合起来，涵盖东海的水晶、可可托海的伟晶岩矿物、昌乐的蓝宝石、蒙阴的钻石、武义的萤石、应城的石膏、五大连池的玄武岩、黄山的花岗岩、雁荡山的流纹岩、房山的汉白玉等这些可以亲眼看到的东西。另有三个专题页：原理讲的是这些性质背后的成因，易混对照给出几组容易认错的组合与区分动作，来历与变化讲的是名称与用途怎么一路变过来。</p>
-<h2>手边要带的几样东西</h2>
-<p>一块没有上釉的白瓷板，用来测条痕，这是判断铁矿石与含铜矿物最省事的办法；一把小刀或一枚硬度较高的金属钥匙，用来比较硬度；一个小瓶稀盐酸或一瓶白醋，用来试碳酸盐类矿物的反应；一块磁铁，用来分辨含磁性的矿物；一个十倍左右的放大镜，用来观察颗粒、解理面与包裹体。再带上紫外灯就更完整，能看出萤石一类矿物的荧光。这些工具的价格都很低，但能把现场判断的可靠性提高很多。</p>
-<h2>几条实在的提醒</h2>
-<p>地质公园、风景名胜区与生产矿区都有各自的管理规定，采集标本通常是不允许的，露头本身也需要保护；进入废弃坑口与边坡下方存在落石与坍塌风险，独自下坑没有必要。观察与记录同样能让人看懂一块岩石：看清它与围岩的界线，写清它的构造与颗粒，量出条带的走向，这些做法比带走标本更有价值，也不会让后来的访问者无物可看。</p>
-<h2>起步的次序</h2>
-<p>如果手里已经有一块不知道是什么的石头，可以先看易混对照那一页，按给出的动作逐项排查，多数常见矿物能在几分钟内缩小到两三种可能；如果打算出行，就先看两部分实物索引，按地点挑一处距离合适的，把那一页的实物描述读一遍，到了现场再对照；如果只想弄明白为什么，直接去原理页，那里从晶体内部的排列方式讲起，一路讲到变质作用的温压条件。</p>
-<p>总览之外，矿物实物共十二处，都是能上手比较的地点，从江苏东海的水晶一直排到河北宣化的赤铁矿，看的是单颗矿物的颜色、光泽、硬度与裂开的方式；岩石实物共七处，看的是颗粒之间的关系与整体的结构构造，从五大连池刚喷出不久的玄武岩，到曾进入地下深处又被抬回地表的榴辉岩；原理页把硬度、解理、双折射、结晶顺序与变质条件这几条线索串起来，回答这些性质从哪儿来；易混对照页给出几组现场最容易认错的组合，每一组都配上可以在手里做的区分动作；来历与变化页则专讲名称与用途的沿革，许多今天熟悉的叫法，几十年前完全是另一回事。</p>
+<h1>能去看的地点 <span class="en">Places you can actually go</span></h1>
+<h2>矿床与产地</h2>
+<p><a href="didian/donghai-shuijing.html">东海水晶</a> <span class="en">Donghai, Jiangsu</span>江苏省连云港市东海县，中国东海水晶博物馆在县城西双湖畔，中国东海水晶城在中华北路，另有民办的圣时水晶博物馆设在国际水晶珠宝城内。这里能看到石英（水晶）、金红石（发晶、钛晶）、蛇纹石、蓝晶石、蛭石。博物馆与市场上最主要的品种。</p>
+<p><a href="didian/changle-lanbaoshi.html">昌乐蓝宝石</a> <span class="en">Changle, Shandong</span>山东省潍坊市昌乐县，原生矿在五图街道的方山、方山北麓与邱家河一带，砂矿散布在县境与潍坊城区。中国蓝宝石博物馆在县城的中国宝石城内，乔官镇还有远古火山口群。这里能看到刚玉（蓝宝石）、红宝石与星光蓝宝石、二辉岩与纯橄榄岩包体。分原生与砂矿两类。</p>
+<p><a href="didian/mengyin-jingangshi.html">蒙阴金刚石</a> <span class="en">Mengyin, Shandong</span>山东省临沂市蒙阴县联城乡常马庄，沂蒙钻石国家矿山公园依托原蒙阴金刚石矿（建材七〇一矿）建成，东北距蒙阴县城不远，有公路直达。这里能看到金刚石、金伯利岩、镁铝榴石、铬透辉石。产在金伯利岩里，是国内少见的金刚石原生矿。</p>
+<p><a href="didian/keketuohai-kuangmai.html">可可托海三号矿脉</a> <span class="en">Koktokay, Xinjiang</span>新疆维吾尔自治区阿勒泰地区富蕴县可可托海镇，可可托海国家矿山公园在镇上，核心是三号矿脉，另有地质陈列馆与阿依果孜矿洞。这里能看到绿柱石（海蓝宝石）、电气石（碧玺）、锂辉石、钽铌铁矿、锡石、白云母、石英、长石、黄玉（托帕石）、石榴子石、额尔齐斯石。伟晶岩里最有名的品种之一，呈六方柱状，蓝绿色到海蓝色，透明到半透明。</p>
+<p><a href="didian/wuyi-yingshi.html">武义萤石</a> <span class="en">Wuyi, Zhejiang</span>浙江省金华市武义县，武义萤石博物馆在县城的温泉小镇一带，杨家、后树等老矿区在县城周边。这里能看到萤石、石英（玉髓、蛋白石）、方解石、重晶石、黄铁矿、磷灰石、高岭土、玛瑙、黄蜡石。这个地点绝对的主角。</p>
+<p><a href="didian/yangchun-kongqueshi.html">阳春孔雀石</a> <span class="en">Yangchun, Guangdong</span>广东省阳江市阳春市马水镇石菉圩一带的石菉铜矿，市区有奇石街与阳春市博物馆，省博物馆也收藏有阳春产的孔雀石标本。这里能看到孔雀石、蓝铜矿、黄铜矿与黄铁矿、赤铜矿、硅孔雀石、褐铁矿、方解石、黄蜡石与青石。含铜硫化物在氧化带风化后的次生产物。</p>
+<p><a href="didian/daye-tonglushan.html">大冶铜绿山</a> <span class="en">Daye, Hubei</span>湖北省黄石市大冶市金湖街道，铜绿山古铜矿遗址博物馆与铜绿山国家考古遗址公园在城西南不远处。这里能看到孔雀石、赤铜矿与自然铜、蓝铜矿、黄铜矿、黄铁矿、磁铁矿、赤铁矿、褐铁矿、高岭土。这个地点名字的由来。</p>
+<p><a href="didian/yingcheng-shigao.html">应城石膏</a> <span class="en">Yingcheng, Hubei</span>湖北省孝感市应城市城北街道团山一带，应城国家矿山公园与园内的中国石膏博物馆在团山北麓、凤尾湖畔。这里能看到石膏、硬石膏、泥质石膏、钙芒硝、岩盐、萤石、天青石、白云石、方解石、高岭石。这里的主角，以白色纤维石膏为主。</p>
+<p><a href="didian/jingdezhen-gaoling.html">景德镇高岭</a> <span class="en">Gaoling, Jiangxi</span>江西省景德镇市浮梁县瑶里镇高岭村，高岭国家矿山公园以高岭瓷土矿遗址为核心。这里能看到高岭石、埃洛石、伊利石、石英、云母、长石。近地表矿石的主要矿物，晶形不完整、呈碎片状，是长石在风化作用下分解的产物。</p>
+<p><a href="didian/chaerhan-yanhua.html">察尔汗盐湖</a> <span class="en">Qarhan, Qinghai</span>青海省海西蒙古族藏族自治州格尔木市察尔汗镇，梦幻盐湖景区有游客服务中心，盐湖博物馆在厂区内，另有察尔汗盐湖国家矿山公园。这里能看到石盐（岩盐）、光卤石、钾石盐、水氯镁石、石膏、芒硝、白钠镁矾、软钾镁矾、钾盐镁矾、杂卤石、盐花与盐钟乳。干盐滩上那层坚硬盐盖的主体。</p>
+<p><a href="didian/baiyunebo.html">白云鄂博</a> <span class="en">Bayan Obo, Inner Mongolia</span>内蒙古自治区包头市白云鄂博矿区，矿山路街道一带；白云鄂博矿山公园由主矿、东矿南部的废弃采坑治理改建而成，分主矿、东矿、西矿三个矿区。这里能看到磁铁矿与赤铁矿、氟碳铈矿与独居石、易解石与铌铁矿、萤石、霓石、钠闪石、金云母、黑云母、钠长石、白云石、方解石、磷灰石、重晶石。铁矿石的矿石矿物。</p>
+<p><a href="didian/shizhuyuan.html">郴州柿竹园</a> <span class="en">Shizhuyuan, Hunan</span>湖南省郴州市苏仙区白露塘镇，柿竹园国家矿山公园在山河路与柿竹园路交叉口一带；公园博物馆在苏仙区金鑫路，另有郴州世界有色金属博物馆在郴州大道与林邑路交汇处。这里能看到白钨矿与黑钨矿、辉铋矿与辉钼矿、锡石、绿柱石与电气石、石榴子石、透辉石、硅灰石、符山石、萤石。钨的两种主要矿石矿物。</p>
+<p><a href="didian/damaping-ganlanshi.html">大麻坪橄榄石</a> <span class="en">Damaping, Hebei</span>河北省张家口市万全区北新屯乡大麻坪村西，有三级公路从村东通过。附近的崇礼接沙坝一带也有同类露头。这里能看到橄榄石（贵橄榄石）、辉石、石榴石、尖晶石、玄武岩与石柱群。产在第三纪汉诺坝玄武岩底部的橄榄岩包体里。</p>
+<p><a href="didian/xuanhua-chitietkuang.html">宣化赤铁矿</a> <span class="en">Xuanhua, Hebei</span>河北省张家口市宣化区庞家堡镇，原龙烟铁矿矿区（红石山）一带，现存废弃矿坑、近北庄露天采场、旧厂房与马万水纪念馆。这里能看到赤铁矿、镜铁矿、菱铁矿、褐铁矿与磁铁矿、石英、方解石、黄铁矿、绿泥石、磷灰石。宣龙式铁矿的主角，有两种最醒目的形态。</p>
+<h2>岩石露头</h2>
+<p><a href="didian/wudalianchi-xuanwuyan.html">五大连池玄武岩</a> <span class="en">Wudalianchi, Heilongjiang</span>黑龙江省黑河市五大连池市，老黑山与火烧山景区在核心区，龙门石寨在另一侧，两山之间的石海连绵成片。五大连池世界地质公园博物馆在药泉西路。这里能看到碱性玄武岩、橄榄石与地幔包体、结壳熔岩、翻花熔岩与块状熔岩、气孔与杏仁体、浮岩、火山弹与集块岩。这里喷出的不是普通玄武岩，而是富钾的碱性玄武岩，包括白榴玄武岩、白榴歪长玄武岩与玻基辉橄玄武岩等。</p>
+<p><a href="didian/yandangshan-liuwenyan.html">雁荡山流纹岩</a> <span class="en">Yandangshan, Zhejiang</span>浙江省温州市雁荡山，灵峰、灵岩、大龙湫、方洞等分景区都有溢流相剖面，朝阳嶂与五峰山的露头最适合贴近观察，雁荡山博物馆内有世界火山岩展厅。这里能看到流纹岩与球泡流纹岩、球泡与石泡、熔结凝灰岩与凝灰岩、石英正长斑岩、柱状节理。这里的主体岩石。</p>
+<p><a href="didian/huangshan-huagangyan.html">黄山花岗岩</a> <span class="en">Huangshan, Anhui</span>安徽省黄山市黄山风景区，云谷寺谷地、光明顶、玉屏楼至天都峰、西海大峡谷与飞来石一带都能走到岩石跟前。这里能看到花岗岩、石英、钾长石与斜长石、铁白云母（黑云母）、锆石与磷灰石。黄山的主体是一个复式岩体，由早期的太平花岗闪长岩与后来的黄山花岗岩组成，后者又分四期，从粗粒似斑状到中细粒斑状都有。</p>
+<p><a href="didian/taishan-pianmayan.html">泰山片麻岩</a> <span class="en">Taishan, Shandong</span>山东省泰安市泰山，红门至中天门登山道沿线、中天门、南天门、桃花峪彩石溪都能看到露头；泰山地质公园博物馆在岱庙北侧。这里能看到黑云斜长片麻岩与斜长角闪岩、混合岩与混合花岗岩、石英、钾长石与斜长石、黑云母与角闪石、石榴子石、二长花岗岩与石英闪长岩。泰山岩群的表壳岩，是这一带最古老的岩石。</p>
+<p><a href="didian/jinan-huichangyan.html">济南辉长岩</a> <span class="en">Jinan, Shandong</span>山东省济南市，卧牛山地质公园在历城区华山街道，药山公园在天桥区无影山北路，华山历史文化湿地公园在历城区荷花路。这几处都是岩体出露的孤立山头。这里能看到辉长岩、斜长石、单斜辉石、橄榄石、黑云母、角闪石、磁铁矿、磷灰石、大理岩与矽卡岩。商品名济南青，是这里的主角。</p>
+<p><a href="didian/fangshan-hanbaiyu.html">房山汉白玉</a> <span class="en">Fangshan, Beijing</span>北京市房山区大石窝镇高庄村西的大白玉塘采石场遗址，中国房山世界地质公园博物馆在长沟镇六甲房村。这里能看到汉白玉、白云石大理岩与青白石、方解石型大理岩、硅灰石、滑石、透闪石、透辉石、艾叶青与螺丝转。一种质地极细的白色大理岩。</p>
+<p><a href="didian/dabieshan-liuhuiyan.html">大别山榴辉岩</a> <span class="en">Dabieshan, Anhui</span>安徽省安庆市岳西县菖蒲镇水畈村碧溪岭，榴辉岩出露在乡村公路边坡与河床；同区还有潜山市水吼镇新店的含金刚石榴辉岩、牌楼至菖蒲的硬玉石英岩带，以及韩长冲大理岩中的榴辉岩。这里能看到榴辉岩、石榴子石、绿辉石、金红石、柯石英与金刚石、蓝晶石、多硅白云母、角闪石、绿帘石、硬玉石英岩与大理岩。这个地点的主角，外观上最醒目的特征是红绿相间。</p>
+<p><a href="didian/guilin-zhongrushi.html">桂林洞穴方解石</a> <span class="en">Guilin, Guangxi</span>广西壮族自治区桂林市，芦笛岩在秀峰区芦笛路光明山南麓，七星岩在七星区七星景区内的普陀山腹。这里能看到方解石、钟乳石、石笋、石柱与石幔、穴盾与流石坝、石花与石旗。所有洞穴沉积物的唯一主角。</p>
 </main>
-<footer><div class="in">
-<p>本手册写的是能摸到、能看到的东西，以及它们为什么长成这样。每一页的实物描述、地点信息与来历变化，都对照了公开资料并注明来源，
-实地情况会随季节、开放安排与保护规定变化，出发前请再确认一次当下的情况；进入矿区、地质公园与生产区域时，请遵守当地的管理要求。
-文中标出的地点是观察对象所在的大致范围，不代表那里可以随意采集标本，也不代表进入不受限制。</p>
-</div></footer>
+<footer><div class="in"><p>这里写的是能走到跟前去看的东西，以及它们为什么长成这样。每一处的位置、矿种、共生关系与开放状态，都对照了公开资料并注明来源。实地情况会随季节、开放安排与保护规定变化，出发前请再确认一次当下的情形；文中标出的地点是观察对象所在的大致范围，不代表那里可以随意采集标本，也不代表进入不受限制。</p></div></footer>
 </body></html>
