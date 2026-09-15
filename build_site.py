@@ -57,7 +57,7 @@ p.ref a{border-bottom-style:dotted}
 p.go{text-indent:0;font-size:14.5px;background:var(--panel);border-left:3px solid var(--rule);
   padding:8px 12px;line-height:1.8}
 span.en{font-size:.72em;color:var(--muted);font-family:Georgia,"Times New Roman",serif;font-weight:400;
-  margin-left:.5em;letter-spacing:.01em}
+  margin-left:.5em;margin-right:.45em;letter-spacing:.01em}
 b{font-weight:700}
 .hl{color:var(--accent);font-weight:700}
 .hw{color:var(--warm);font-weight:700}
