@@ -16,12 +16,16 @@ from d_p3 import P3
 from d_p4 import P4
 from d_p5 import P5
 from d_p6 import P6
+from d_p7 import P7
+from d_p8 import P8
+from d_p9 import P9
+from d_p10 import P10
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'docs')
 E = html.escape
 
-PLACES = P1 + P2 + P3 + P4 + P5 + P6
+PLACES = P1 + P2 + P3 + P4 + P5 + P6 + P7 + P8 + P9 + P10
 
 SITE = '矿物与岩石实物手册'
 SITE_EN = 'Places you can actually go'
