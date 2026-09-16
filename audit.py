@@ -15,12 +15,23 @@ files = [f for f in sorted(files) if f != '.nojekyll']
 
 bad = []
 for rel in files:
-    req = urllib.request.Request(BASE + rel, headers={'User-Agent': 'Mozilla/5.0'})
-    try:
-        r = urllib.request.urlopen(req, timeout=60)
-        on = r.read()
-    except urllib.error.HTTPError as e:
-        bad.append('%s HTTP %s' % (rel, e.code))
+    on = None
+    for _ in range(3):
+        req = urllib.request.Request(BASE + rel, headers={'User-Agent': 'Mozilla/5.0'})
+        try:
+            r = urllib.request.urlopen(req, timeout=45)
+            on = r.read()
+            break
+        except urllib.error.HTTPError as e:
+            on = 'HTTP%s' % e.code
+            break
+        except Exception as e:
+            on = None
+    if on is None:
+        bad.append('%s 读取失败' % rel)
+        continue
+    if isinstance(on, str):
+        bad.append('%s %s' % (rel, on))
         continue
     lo = open(os.path.join(DOCS, rel), 'rb').read()
     if on != lo:
